@@ -1,0 +1,97 @@
+.inputSection {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    border-right: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 1.5px 1.5px lightblue;
+}
+
+.inputSection input {
+    background-color:#ffffff;
+    flex: 1;
+    height: 3rem;
+    border: none;
+    padding: 0 1rem;
+    color: #2a2a2a;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.labelButtonGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.labelButtonGroup label {
+    font-style: italic;
+}
+
+.inputSection button {
+    height: 3rem;
+    width: 3rem;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTpc3vBfZpQuqh2KsO2LPNVii7WDJ46_FkAg&s');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.inputSection button:active {
+    transform: scale(0.9);
+    filter: brightness(0.8);
+}
+
+#follower {
+    position: absolute;
+    width: 3rem;
+    height: 2rem;
+    margin-left: 8px;
+    margin-top: 4px;
+    pointer-events: none;
+    transition: top 0.1s, left 0.1s;
+    z-index: 100;
+    overflow: hidden;
+    display: block;
+}
+
+.resultGeneration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+#evolutionTree {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#relatedHeader {
+    display: none;
+    margin-bottom: 10px;    
+}
+
+.evoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 3px 3px lightblue;
+}
