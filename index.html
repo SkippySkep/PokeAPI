@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéData</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="generalInterface">
+        <div class="inputSection">
+            <input type="text" id="pokemon">
+            <img id ="follower" src="https://i0.wp.com/lordlibidan.com/wp-content/uploads/2019/03/Running-Pikachu-GIF.gif?fit=480%2C342&ssl=1">
+            <div class="labelButtonGroup">
+                <label for="pokemon">Who's That Pokémon?</label>
+                <button onclick="getData()"></button>
+            </div>
+        </div>
+        <div class="resultGeneration" id="pokemonInfo">
+            <div id="errorMessage"></div>
+            <div id="mainPokemon"></div>
+            <h3 id="relatedHeader">Related:</h3>
+            <div id="evolutionTree"></div>
+        </div>
+    </div>
+
+    <script src="API.js"></script>
+    <script src ="Interface.js"></script>
+</body>
+</html>
